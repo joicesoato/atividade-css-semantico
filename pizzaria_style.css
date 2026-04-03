@@ -1,0 +1,136 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Verdana', sans-serif;
+}
+
+/* Corpo da página */
+body {
+    background-color: #fff3e0;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #ff7043;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    flex-wrap: wrap;
+}
+
+header div p {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #d84315;
+    border-radius: 5px;
+}
+
+/* Conteúdo principal */
+main {
+    padding: 40px 20px;
+}
+
+/* Título do menu */
+main section:first-of-type {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main section:first-of-type h1 {
+    font-size: 2rem;
+    color: #bf360c;
+}
+
+/* Seção de pizzas */
+section:nth-of-type(2) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+/* Card de pizza */
+article {
+    background-color: #ffe0b2;
+    border-radius: 15px;
+    padding: 20px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+article:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+article img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+
+article h2 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #bf360c;
+}
+
+article p {
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+article button {
+    padding: 10px 15px;
+    background-color: #d84315;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+article button:hover {
+    background-color: #bf360c;
+}
+
+/* Rodapé */
+footer {
+    background-color: #ff7043;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
